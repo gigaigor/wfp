@@ -38,6 +38,7 @@ namespace WpfApp1
             conn.Open();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dataTable);
+            testGrid.DataContext = dataTable.DefaultView;
             conn.Close();
 
         }

@@ -17,7 +17,9 @@
             Content="Test"
             ></Label>
         <DataGrid
-            AutoGenerateColumns="True">
+            Name="testGrid"
+            ItemsSource="{Binding}"
+            >
         </DataGrid>
         
     </StackPanel>
